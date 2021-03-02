@@ -1,0 +1,1095 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo|Montserrat|Poppins&display=swap');
+
+/* global style */
+* {
+    box-sizing: border-box;
+}
+
+.navbar_logo, .con_link h1{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    color: #333333;
+}
+
+body{
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+/* navigation bar start */
+.navbar{
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+.navbar_logo h1{
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.navbar_menu{
+    display: flex;
+    margin-left: auto;
+}
+
+.menu_icon{
+    display: none;
+    -webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.navbar_menu .menu_lists{
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.close{
+    display: none;
+    text-align: right;
+}
+
+.close span{
+    display: inline-block;
+	border: 1px solid #7a7a7a;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.navbar_menu .menu_lists .menu_items{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* navigation bar end */
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar_menu .menu_lists a{
+    color: #333333;
+}
+
+.intro_story p a{
+    color: #2D9CDB;
+}
+
+.intro_img img{
+    border-radius: 18px;
+}
+
+#up{
+    margin-top: -15px;
+}
+
+#uph{
+    margin-top: -70px;
+}
+
+.subscribe p, .con_email p{
+    font-weight: 500;
+    color: #828282;
+}
+
+.input_email{
+    display: flex;
+}
+
+.input_email input{
+    color: #BDBDBD;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.input_email button{
+    font-weight: 500;
+    text-align: center;
+    color: #F2F2F2;
+    background: #2D9CDB;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* .serv{
+    
+} */
+
+.serv_type{
+    display: flex;
+}
+
+.serv_item{
+    display: block;
+    background: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+/* .serv_item :hover{
+    cursor: pointer;
+} */
+.serv h2, .work h2{
+    font-weight: 500;
+    color: #333333;
+}
+
+.item_img{
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_img img{
+    min-width: 30px;
+}
+
+.bcolor{
+    background-color: #2D9CDB;
+}
+
+.gcolor{
+    background-color: #27AE60;
+}
+
+.rcolor{
+    background-color: #e85757;
+}
+
+.item_details h3{
+    font-weight: bold;
+    color: #333333;
+}
+
+.item_btn{
+    width: 116px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+    text-align: center;
+    background: #E0E0E0;
+    border: none;
+    border-radius: 12px;
+}
+
+.item_btn:hover{
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #2D9CDB;
+}
+
+.curve{
+    border-radius: 12px;
+}
+
+.work_grid{
+    display: grid;
+}
+
+.work p{
+    font-weight: 300;
+    color: #828282;
+}
+
+.work h3{
+    font-weight: 500;
+    color: #333333;
+}
+
+.work .arrow{
+    display: flex;
+}
+
+.work .arrow :hover{
+    cursor: pointer;
+}
+
+.work .arrow h3{
+    color: #2D9CDB;
+}
+
+.work .arrow img{
+    width: 36px;
+    height: 18px;
+    /* margin-top: px; */
+}
+
+.team{
+    display: flex;
+}
+
+.team_stat #theadin{
+    font-weight: 500;
+    color: #EB5757;
+}
+
+.team_stat h2{
+    font-weight: 500;
+    color: #333333;
+}
+
+.team_stat p{
+    font-weight: normal;
+    color: #4F4F4F;
+}
+
+.team_pics{
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'a c';
+    gap: 10px;
+    justify-content: center;
+}
+
+.pic_a{
+    grid-area: b;
+}
+.pic_b{
+    grid-area: c;
+}
+.pic_c{
+    grid-area: a;
+}
+
+.comment h3{
+    font-weight: 500;
+    color: #333333;
+}
+
+.com_profile{
+    display: flex;
+}
+
+.pdetails h4{
+    font-weight: 500;
+    color: #333333;
+}
+
+.pdetails p{
+    font-weight: 500;
+    color: #828282;
+}
+
+footer, footer a, .con_link h1{
+    background: #100E1D;
+    color: #F2F2F2;
+}
+
+.connect{
+    display: flex;
+    width: 100%;
+}
+
+.con_nav ul{
+    list-style: none;
+}
+
+footer{
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -14px;
+}
+
+footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* navigation bar start */
+    .navbar{
+        -webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-top: 0;
+        padding-left: 10px;
+    }
+    
+    .navbar_logo h1{
+        margin-top: 5px;
+    }
+
+    .navbar_menu ._Menus-show{
+        left: 0;
+        z-index: 9;
+    }
+
+    .menu_icon{
+		display: -webkit-box;
+		display: -ms-flexbox;
+        display: flex;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+
+    .menu_lists{
+        -ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		position: fixed;
+		left: 100%;
+		text-align: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		background: #ffffff;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		-webkit-transition: left .3s;
+		-o-transition: left .3s;
+		transition: left .3s;
+    }
+
+    .close{
+        display: block;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 60px;
+    }
+
+    .menu_items{
+        padding-bottom: 20px;
+    }
+    /* navigation bar start */
+
+    .intro_story{
+        margin-top: 90px;
+        margin-left: 40px;
+        width: 250px;
+    }
+
+    .intro_story p{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .intro_story h2{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .intro_img img{
+        width: 310px;
+        height: 110px;
+        margin-left: 10px;
+    }
+
+    .subscribe{
+        margin-left: 40px;
+        margin-top: 60px;
+    }
+
+    .subscribe p, .con_email p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .input_email{
+        width: 240px;
+        height: 47;
+        margin-top: -8px;  
+    }
+
+    .input_email input{
+        width: 240px;
+        padding: 6px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .input_email button{
+        font-size: 14px;
+        line-height: 21px;
+        width: 70px;
+        padding: 6px;
+        margin-left: -70px;
+    }
+
+    /* .serv{
+    } */
+
+    .serv h2, .work h2{
+        font-size: 24px;
+        line-height: 36px;
+        width: 200px;
+        margin-top: 130px;
+        margin-left: 20px;
+    }
+
+    .serv_type{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .serv_item{
+        width: 285px;
+        height: 350px;
+        padding: 25px;
+        margin-top: 15px;
+    }
+
+    .item_img{
+        width: 67px;
+        height: 67px;
+    }
+
+    .item_details{
+        width: 225px;
+    }
+
+    .item_details h3{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .work_grid{
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-gap: 10px;
+    }
+    
+    .work_left{
+        margin-top: 10px;
+    }
+
+    .work_grid img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .work .arrow{
+        margin-top: 0;
+        justify-self: start;
+    }
+    
+    .work .arrow img{
+        margin-top: -18px;
+    }
+
+    .work p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .work h3{
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: -18px;
+    }
+
+    .team{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 95px;
+    }
+
+    .team_stat{
+        width: 260px;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .team_stat #theadin{
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .team_stat h2{
+        font-size: 36px;
+        line-height: 54px;
+        margin-top: -20px;
+    }
+
+    .team_stat p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: -20px;
+    }
+
+    .pic_c{
+        margin-top: 100px;
+    }
+    .pic_c img{
+        width: 150px;
+        height: 150px;
+    }
+    .pic_b img{
+        width: 140px;
+        height: 140px;
+    }
+    .pic_a img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .comment{
+        margin-top: 130px;
+        margin-left: 20px;
+    }
+
+    .comment h3{
+        font-size: 24px;
+        line-height: 36px;
+        width: 290px;
+    }
+
+    .prof_pic img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .pdetails{
+        margin-top: -30px;
+        margin-left: 10px;
+    }
+
+    .pdetails h4{
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .pdetails p{
+        font-size: 14px;
+        line-height: 27px;
+        margin-top: -25px;
+    }
+
+    .connect{
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 90px;
+    }
+
+    .con_nav .menu_items{
+        margin: 5px;
+    }
+
+    .con_email{
+        margin-top: -50px;
+    }
+    
+    .con_link, .con_email{
+        margin-left: 30px;
+    }
+    .con_email p{
+        margin-left: -190px;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+    .navbar{
+        -webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-top: 0;
+        padding-left: 10px;
+    }
+    
+    .navbar_logo h1{
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 1px;
+    }
+
+    .intro_story{
+        margin-top: 90px;
+        margin-left: 40px;
+        width: 250px;
+    }
+
+    .intro_story p{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .intro_story h2{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .intro_img img{
+        width: 550px;
+        height: 200px;
+        margin-left: 10px;
+    }
+
+    .subscribe{
+        margin-left: 40px;
+        margin-top: 60px;
+    }
+
+    .subscribe p, .con_email p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .input_email{
+        width: 240px;
+        height: 47;
+        margin-top: -8px;  
+    }
+
+    .input_email input{
+        width: 240px;
+        padding: 6px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .input_email button{
+        font-size: 14px;
+        line-height: 21px;
+        width: 70px;
+        padding: 6px;
+        margin-left: -70px;
+    }
+
+    /* .serv{
+    } */
+
+    .serv h2, .work h2{
+        font-size: 24px;
+        line-height: 36px;
+        width: 200px;
+        margin-top: 130px;
+        margin-left: 20px;
+    }
+
+    .serv_type{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .serv_item{
+        width: 285px;
+        height: 350px;
+        padding: 25px;
+        margin-top: 15px;
+    }
+
+    .item_img{
+        width: 67px;
+        height: 67px;
+    }
+
+    .item_details{
+        width: 225px;
+    }
+
+    .item_details h3{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .work_grid{
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-gap: 10px;
+    }
+    
+    .work_left{
+        margin-top: 10px;
+    }
+
+    .work_grid img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .work .arrow{
+        margin-top: 0;
+        justify-self: start;
+    }
+    
+    .work .arrow img{
+        margin-top: -18px;
+    }
+
+    .work p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .work h3{
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: -18px;
+    }
+
+    .team{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 95px;
+    }
+
+    .team_stat{
+        width: 260px;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .team_stat #theadin{
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .team_stat h2{
+        font-size: 36px;
+        line-height: 54px;
+        margin-top: -20px;
+    }
+
+    .team_stat p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: -20px;
+    }
+
+    .pic_c{
+        margin-top: 80px;
+    }
+    .pic_c img{
+        width: 150px;
+        height: 150px;
+    }
+    .pic_b img{
+        width: 140px;
+        height: 140px;
+    }
+    .pic_a img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .comment{
+        margin-top: 130px;
+        margin-left: 20px;
+    }
+
+    .comment h3{
+        font-size: 24px;
+        line-height: 36px;
+        width: 370px;
+    }
+
+    .prof_pic img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .pdetails{
+        margin-top: -30px;
+        margin-left: 10px;
+    }
+
+    .pdetails h4{
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .pdetails p{
+        font-size: 14px;
+        line-height: 27px;
+        margin-top: -25px;
+    }
+
+    .connect{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 90px;
+    }
+
+    .con_nav .menu_items{
+        margin: 5px;
+    }
+
+    .con_email{
+        margin-top: -50px;
+    }
+    
+    .con_link, .con_email{
+        margin-left: 30px;
+    }
+    .con_email p{
+        margin-left: -130px;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up)  */
+@media only screen and (min-width: 992px) {
+    .navbar{
+        padding-left: 20px;
+        padding-right: 18px;
+    }
+
+    .navbar_logo h1{
+        font-size: 36px;
+        line-height: 53px;
+        margin-top: -5px;
+    }
+
+    .menu_lists{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .intro_story{
+        margin-top: 90px;
+        margin-left: 170px;
+        width: 450px;
+    }
+
+    .intro_story p{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .intro_story h2{
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    .intro_img img{
+        width: 1292px;
+        margin-left: 20px;
+    }
+
+    .subscribe{
+        margin-left: 170px;
+        margin-top: 60px;
+    }
+
+    .subscribe p, .con_email p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .input_email{
+        width: 350px;
+        height: 57;
+        margin-top: -8px;  
+    }
+
+    .input_email input{
+        width: 350px;
+        padding: 10px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .input_email button{
+        font-size: 18px;
+        line-height: 27px;
+        width: 94px;
+        padding: 10px;
+        margin-left: -95px;
+    }
+
+    /* .serv{
+    } */
+
+    .serv h2, .work h2{
+        font-size: 36px;
+        line-height: 54px;
+        width: 300px;
+        margin-top: 130px;
+        margin-left: 95px;
+    }
+
+    .serv_type{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .serv_item{
+        width: 285px;
+        height: 350px;
+        padding: 25px;
+    }
+
+    .item_img{
+        width: 67px;
+        height: 67px;
+    }
+
+    .item_details{
+        width: 225px;
+    }
+
+    .item_details h3{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .work_grid{
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-gap: 10px;
+    }
+    
+    .work_grid img{
+        width: 530px;
+        height: 530px;
+    }
+
+    .work_left{
+        margin-top: 100px;
+    }
+
+    .work .arrow{
+        margin-top: -80px;
+        justify-self: end;
+    }
+    
+    .work .arrow img{
+        margin-top: -12px;
+    }
+
+    .work p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .work h3{
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: -18px;
+    }
+
+    .team{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 95px;
+    }
+
+    .team_stat{
+        width: 260px;
+        margin-right: 150px;
+    }
+
+    .team_stat #theadin{
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .team_stat h2{
+        font-size: 36px;
+        line-height: 54px;
+        margin-top: -20px;
+    }
+
+    .team_stat p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: -20px;
+    }
+
+    .pic_c{
+        margin-top: 100px;
+    }
+    .pic_c img{
+        width: 320px;
+        height: 320px;
+    }
+    .pic_b img{
+        width: 290px;
+        height: 290px;
+    }
+    .pic_a img{
+        width: 260px;
+        height: 260px;
+    }
+
+    .comment{
+        margin-top: 130px;
+        margin-left: 95px;
+    }
+
+    .comment h3{
+        font-size: 36px;
+        line-height: 54px;
+        width: 700px;
+    }
+
+    .prof_pic img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .pdetails{
+        margin-top: -30px;
+        margin-left: 10px;
+    }
+
+    .pdetails h4{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .pdetails p{
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: -25px;
+    }
+
+    .connect{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 90px;
+    }
+
+    .con_nav .menu_items{
+        margin: 15px;
+    }
+
+    .con_email{
+        margin-top: -50px;
+    }
+    
+    .con_email p{
+        margin-left: -190px;
+    }
+    
+}
