@@ -6,14 +6,14 @@
 }
 
 .navbar_logo, .con_link h1{
-    font-family: 'Heebo';
+    font-family: 'Heebo', serif;
     font-style: normal;
     font-weight: 800;
     color: #333333;
 }
 
 body{
-    font-family: 'Poppins';
+    font-family: 'Poppins',serif;
     font-style: normal;
 }
 
@@ -23,7 +23,10 @@ body{
 	display: -ms-flexbox;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 20px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    padding-top: 0;
+    padding-left: 10px;
 	overflow: hidden;
 }
 
@@ -78,13 +81,36 @@ body{
     padding-right: 20px;
 }
 /* navigation bar end */
+
 a{
     text-decoration: none;
     cursor: pointer;
 }
 
+.navbar_menu .menu_lists a:hover{
+    color: rgb(152, 194, 219);
+}
+
 .navbar_menu .menu_lists a{
     color: #333333;
+}
+
+.intro_story{
+    margin-top: 90px;
+    margin-left: 40px;
+    width: 250px;
+}
+
+.intro_story p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.intro_story h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
 }
 
 .intro_story p a{
@@ -105,14 +131,28 @@ a{
 
 .subscribe p, .con_email p{
     font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
     color: #828282;
 }
 
 .input_email{
     display: flex;
+    width: 240px;
+    height: 47;
+    margin-top: -8px;  
+}
+
+.subscribe{
+    margin-left: 40px;
+    margin-top: 60px;
 }
 
 .input_email input{
+    width: 240px;
+    padding: 6px;
+    font-size: 14px;
+    line-height: 21px;
     color: #BDBDBD;
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
@@ -121,6 +161,11 @@ a{
 }
 
 .input_email button{
+    font-size: 14px;
+    line-height: 21px;
+    width: 70px;
+    padding: 6px;
+    margin-left: -70px;
     font-weight: 500;
     text-align: center;
     color: #F2F2F2;
@@ -130,32 +175,38 @@ a{
     cursor: pointer;
 }
 
-/* .serv{
-    
-} */
-
 .serv_type{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .serv_item{
     display: block;
+    width: 285px;
+    height: 350px;
+    padding: 25px;
+    margin-top: 15px;
     background: #FFFFFF;
     border-radius: 24px;
     box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
 }
 
-/* .serv_item :hover{
-    cursor: pointer;
-} */
 .serv h2, .work h2{
     font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    width: 200px;
+    margin-top: 130px;
+    margin-left: 20px;
     color: #333333;
 }
 
 .item_img{
     border-radius: 16px;
     display: flex;
+    width: 67px;
+    height: 67px;
     align-items: center;
     justify-content: center;
 }
@@ -176,8 +227,14 @@ a{
     background-color: #e85757;
 }
 
+.item_details{
+    width: 225px;
+}
+
 .item_details h3{
     font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
     color: #333333;
 }
 
@@ -206,20 +263,39 @@ a{
 
 .work_grid{
     display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-gap: 10px;
 }
 
 .work p{
     font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
     color: #828282;
 }
 
 .work h3{
     font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: -18px;
     color: #333333;
+}
+
+.work_left{
+    margin-top: 10px;
+}
+
+.work_grid img{
+    width: 300px;
+    height: 300px;
 }
 
 .work .arrow{
     display: flex;
+    margin-top: 0;
+    justify-self: start;
 }
 
 .work .arrow :hover{
@@ -233,25 +309,41 @@ a{
 .work .arrow img{
     width: 36px;
     height: 18px;
-    /* margin-top: px; */
+    margin-top: -18px;
 }
 
 .team{
     display: flex;
+    justify-content: center;
+    margin-top: 95px;
+}
+
+.team_stat{
+    width: 260px;
+    margin-right: 0;
+    margin-left: 20px;
 }
 
 .team_stat #theadin{
     font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
     color: #EB5757;
 }
 
 .team_stat h2{
     font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    margin-top: -20px;
     color: #333333;
 }
 
 .team_stat p{
     font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -20px;
     color: #4F4F4F;
 }
 
@@ -274,8 +366,28 @@ a{
     grid-area: a;
 }
 
+.pic_c img{
+    width: 150px;
+    height: 150px;
+}
+.pic_b img{
+    width: 140px;
+    height: 140px;
+}
+.pic_a img{
+    width: 120px;
+    height: 120px;
+}
+
+.comment{
+    margin-top: 130px;
+    margin-left: 20px;
+}
+
 .comment h3{
     font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
     color: #333333;
 }
 
@@ -283,13 +395,28 @@ a{
     display: flex;
 }
 
+.prof_pic img{
+    width: 80px;
+    height: 80px;
+}
+
+.pdetails{
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
 .pdetails h4{
     font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
     color: #333333;
 }
 
 .pdetails p{
     font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    margin-top: -25px;
     color: #828282;
 }
 
@@ -300,11 +427,25 @@ footer, footer a, .con_link h1{
 
 .connect{
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 90px;
     width: 100%;
 }
 
 .con_nav ul{
     list-style: none;
+}
+
+.con_nav .menu_items{
+    margin: 5px;
+}
+
+.con_email{
+    margin-top: -50px;
+}
+
+.con_link, .con_email{
+    margin-left: 30px;
 }
 
 footer{
@@ -326,14 +467,6 @@ footer p{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     /* navigation bar start */
-    .navbar{
-        -webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-        justify-content: space-between;
-        padding-top: 0;
-        padding-left: 10px;
-    }
-    
     .navbar_logo h1{
         margin-top: 5px;
     }
@@ -382,265 +515,37 @@ footer p{
     }
     /* navigation bar start */
 
-    .intro_story{
-        margin-top: 90px;
-        margin-left: 40px;
-        width: 250px;
-    }
-
-    .intro_story p{
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .intro_story h2{
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
-    }
-
     .intro_img img{
         width: 310px;
         height: 110px;
         margin-left: 10px;
     }
 
-    .subscribe{
-        margin-left: 40px;
-        margin-top: 60px;
-    }
-
-    .subscribe p, .con_email p{
-        font-size: 10px;
-        line-height: 15px;
-    }
-
-    .input_email{
-        width: 240px;
-        height: 47;
-        margin-top: -8px;  
-    }
-
-    .input_email input{
-        width: 240px;
-        padding: 6px;
-        font-size: 14px;
-        line-height: 21px;
-    }
-
-    .input_email button{
-        font-size: 14px;
-        line-height: 21px;
-        width: 70px;
-        padding: 6px;
-        margin-left: -70px;
-    }
-
-    /* .serv{
-    } */
-
-    .serv h2, .work h2{
-        font-size: 24px;
-        line-height: 36px;
-        width: 200px;
-        margin-top: 130px;
-        margin-left: 20px;
-    }
-
-    .serv_type{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .serv_item{
-        width: 285px;
-        height: 350px;
-        padding: 25px;
-        margin-top: 15px;
-    }
-
-    .item_img{
-        width: 67px;
-        height: 67px;
-    }
-
-    .item_details{
-        width: 225px;
-    }
-
-    .item_details h3{
-        font-size: 24px;
-        line-height: 36px;
-    }
-
-    .work_grid{
-        grid-template-columns: auto;
-        justify-content: center;
-        grid-gap: 10px;
-    }
-    
-    .work_left{
-        margin-top: 10px;
-    }
-
-    .work_grid img{
-        width: 300px;
-        height: 300px;
-    }
-
-    .work .arrow{
-        margin-top: 0;
-        justify-self: start;
-    }
-    
-    .work .arrow img{
-        margin-top: -18px;
-    }
-
-    .work p{
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .work h3{
-        font-size: 18px;
-        line-height: 27px;
-        margin-top: -18px;
-    }
-
     .team{
         flex-direction: column;
-        justify-content: center;
-        margin-top: 95px;
-    }
-
-    .team_stat{
-        width: 260px;
-        margin-right: 0;
-        margin-left: 20px;
-    }
-
-    .team_stat #theadin{
-        font-size: 18px;
-        line-height: 27px;
-    }
-
-    .team_stat h2{
-        font-size: 36px;
-        line-height: 54px;
-        margin-top: -20px;
-    }
-
-    .team_stat p{
-        font-size: 16px;
-        line-height: 24px;
-        margin-top: -20px;
     }
 
     .pic_c{
         margin-top: 100px;
     }
-    .pic_c img{
-        width: 150px;
-        height: 150px;
-    }
-    .pic_b img{
-        width: 140px;
-        height: 140px;
-    }
-    .pic_a img{
-        width: 120px;
-        height: 120px;
-    }
-    
-    .comment{
-        margin-top: 130px;
-        margin-left: 20px;
-    }
 
     .comment h3{
-        font-size: 24px;
-        line-height: 36px;
         width: 290px;
-    }
-
-    .prof_pic img{
-        width: 80px;
-        height: 80px;
-    }
-
-    .pdetails{
-        margin-top: -30px;
-        margin-left: 10px;
-    }
-
-    .pdetails h4{
-        font-size: 20px;
-        line-height: 36px;
-    }
-
-    .pdetails p{
-        font-size: 14px;
-        line-height: 27px;
-        margin-top: -25px;
     }
 
     .connect{
         flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 90px;
     }
 
-    .con_nav .menu_items{
-        margin: 5px;
-    }
-
-    .con_email{
-        margin-top: -50px;
-    }
-    
-    .con_link, .con_email{
-        margin-left: 30px;
-    }
     .con_email p{
         margin-left: -190px;
     }
-    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) {
-    .navbar{
-        -webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-        justify-content: space-between;
-        padding-top: 0;
-        padding-left: 10px;
-    }
-    
     .navbar_logo h1{
-        font-size: 24px;
-        line-height: 35px;
         margin-top: 1px;
-    }
-
-    .intro_story{
-        margin-top: 90px;
-        margin-left: 40px;
-        width: 250px;
-    }
-
-    .intro_story p{
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .intro_story h2{
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
     }
 
     .intro_img img{
@@ -649,208 +554,22 @@ footer p{
         margin-left: 10px;
     }
 
-    .subscribe{
-        margin-left: 40px;
-        margin-top: 60px;
-    }
-
-    .subscribe p, .con_email p{
-        font-size: 10px;
-        line-height: 15px;
-    }
-
-    .input_email{
-        width: 240px;
-        height: 47;
-        margin-top: -8px;  
-    }
-
-    .input_email input{
-        width: 240px;
-        padding: 6px;
-        font-size: 14px;
-        line-height: 21px;
-    }
-
-    .input_email button{
-        font-size: 14px;
-        line-height: 21px;
-        width: 70px;
-        padding: 6px;
-        margin-left: -70px;
-    }
-
-    /* .serv{
-    } */
-
-    .serv h2, .work h2{
-        font-size: 24px;
-        line-height: 36px;
-        width: 200px;
-        margin-top: 130px;
-        margin-left: 20px;
-    }
-
-    .serv_type{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .serv_item{
-        width: 285px;
-        height: 350px;
-        padding: 25px;
-        margin-top: 15px;
-    }
-
-    .item_img{
-        width: 67px;
-        height: 67px;
-    }
-
-    .item_details{
-        width: 225px;
-    }
-
-    .item_details h3{
-        font-size: 24px;
-        line-height: 36px;
-    }
-
-    .work_grid{
-        grid-template-columns: auto;
-        justify-content: center;
-        grid-gap: 10px;
-    }
-    
-    .work_left{
-        margin-top: 10px;
-    }
-
-    .work_grid img{
-        width: 300px;
-        height: 300px;
-    }
-
-    .work .arrow{
-        margin-top: 0;
-        justify-self: start;
-    }
-    
-    .work .arrow img{
-        margin-top: -18px;
-    }
-
-    .work p{
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .work h3{
-        font-size: 18px;
-        line-height: 27px;
-        margin-top: -18px;
-    }
-
     .team{
         flex-direction: row;
-        justify-content: center;
         align-items: center;
-        margin-top: 95px;
-    }
-
-    .team_stat{
-        width: 260px;
-        margin-right: 0;
-        margin-left: 20px;
-    }
-
-    .team_stat #theadin{
-        font-size: 18px;
-        line-height: 27px;
-    }
-
-    .team_stat h2{
-        font-size: 36px;
-        line-height: 54px;
-        margin-top: -20px;
-    }
-
-    .team_stat p{
-        font-size: 16px;
-        line-height: 24px;
-        margin-top: -20px;
-    }
-
-    .pic_c{
-        margin-top: 80px;
-    }
-    .pic_c img{
-        width: 150px;
-        height: 150px;
-    }
-    .pic_b img{
-        width: 140px;
-        height: 140px;
-    }
-    .pic_a img{
-        width: 120px;
-        height: 120px;
-    }
-    
-    .comment{
-        margin-top: 130px;
-        margin-left: 20px;
     }
 
     .comment h3{
-        font-size: 24px;
-        line-height: 36px;
         width: 370px;
-    }
-
-    .prof_pic img{
-        width: 80px;
-        height: 80px;
-    }
-
-    .pdetails{
-        margin-top: -30px;
-        margin-left: 10px;
-    }
-
-    .pdetails h4{
-        font-size: 20px;
-        line-height: 36px;
-    }
-
-    .pdetails p{
-        font-size: 14px;
-        line-height: 27px;
-        margin-top: -25px;
     }
 
     .connect{
         flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 90px;
     }
 
-    .con_nav .menu_items{
-        margin: 5px;
-    }
-
-    .con_email{
-        margin-top: -50px;
-    }
-    
-    .con_link, .con_email{
-        margin-left: 30px;
-    }
     .con_email p{
         margin-left: -130px;
     }
-    
 }
 
 /* Large devices (laptops/desktops, 992px and up)  */
@@ -926,9 +645,6 @@ footer p{
         padding: 10px;
         margin-left: -95px;
     }
-
-    /* .serv{
-    } */
 
     .serv h2, .work h2{
         font-size: 36px;
@@ -1077,7 +793,6 @@ footer p{
 
     .connect{
         flex-direction: row;
-        justify-content: space-evenly;
         margin-top: 90px;
     }
 
@@ -1091,6 +806,5 @@ footer p{
     
     .con_email p{
         margin-left: -190px;
-    }
-    
+    }    
 }
